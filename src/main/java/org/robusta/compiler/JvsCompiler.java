@@ -16,7 +16,7 @@ import javax.tools.ToolProvider;
 
 public class JvsCompiler {
 	private static final File parentDirectory = new File(System.getProperty("user.dir"));
-	final String CLASS_NAME = "C";
+	static final final String CLASS_NAME = "C";
 	
 	public static void build(String jvsFilePath) {
 
