@@ -34,10 +34,9 @@ public class Console extends JFrame {
 	
 	public static synchronized Console getInstance() {
 		if(CONSOLE_INSTANCE == null) {
-			return new Console();
-		} else {
-			return CONSOLE_INSTANCE;
+			CONSOLE_INSTANCE = new Console();
 		}
+		return CONSOLE_INSTANCE;
 	}
 	
 	private static JPanel getConsole() {
